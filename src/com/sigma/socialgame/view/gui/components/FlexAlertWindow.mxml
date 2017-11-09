@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		   xmlns:mx="library://ns.adobe.com/flex/mx" width="400" height="300">
+	<fx:Script>
+		<![CDATA[
+			
+			[Bindable]
+			private var _text : String; 
+			
+			public function set text(text_ : String) : void
+			{
+				_text = text_;
+			}
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<mx:TextArea x="66" y="57" width="257" height="133" id="_textArea" text="{_text}"/>
+</mx:Canvas>
